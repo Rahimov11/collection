@@ -1,0 +1,48 @@
+@mixin text-style {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+  }
+  
+  @mixin  flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin customBox {
+    max-width: 710px;
+    height: 2px;
+    background-color: #FDD6BA;
+    @include flex;
+    justify-content: space-between;
+  
+    span{
+      background: #FEFCF7;
+      border: 2px solid #0E8784;
+      display: block;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+    }
+  }
+  @mixin btn {
+    display: inline-block;
+    background-color: #0E8784;
+    border-radius: 6px; 
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 18px;
+    padding: 15px 31px;
+    line-height: 25px;
+    transition: background-color .4s ease;
+    color: #FEFCF7;
+    
+    &:hover{
+      background-color:#66D2CF;
+    }
+    &:active{
+      background-color:#E2DEDB;
+    }
+  }

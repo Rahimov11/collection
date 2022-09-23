@@ -1,0 +1,62 @@
+.site-header{
+    padding: 43px 0;
+  
+    &__container{
+      @include flex;
+      justify-content: space-between;
+      font-size: 20px;
+    
+    }
+  }
+  .navbar{
+    transition: all .4s ease;
+    &__list{
+      @include flex;
+    }
+  
+    &__item{
+      margin-left: 32px;
+    }
+  
+    &__link{
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+      color: $grey;
+    
+      &:hover{
+        color:#000;
+      }
+    }
+  }
+  .site-header__logo{
+    max-width: 236px;
+    display: inline-block;
+  }
+  .navbar__btn{
+    width: 20px;
+    height: 20px;
+    background-image: url('../../img/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    display: none;
+  }
+  .box{
+    @include customBox;
+  }
+  
+  @media only screen and (max-width:690px){
+    .navbar__list{
+      display: none;
+    }
+    .navbar__btn{
+      display: inline-block;
+    }
+    .site-header__logo{
+      max-width: 163px;
+    }
+  }

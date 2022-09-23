@@ -1,0 +1,48 @@
+.collection__wrapper{
+    background-image: url(../../img/collection.img.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: 0;
+}
+.collection__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:none ;
+    padding: 0;
+}
+.collection__item{
+    margin-left: 30px;
+    margin-top: 126px;
+    margin-bottom: 100px;
+}
+.collection__title{
+font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #333D4B;
+
+}
+.collection__text{
+    width: 255px;
+    height: 78px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+
+color: #333D4B;
+}
+@media  only screen and (max-width:768px) {
+ 
+    .collection__item{
+        grid-row:4;
+    }
+    .collection__list{
+        grid-column: 4;
+    }
+    
+}
